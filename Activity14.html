@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation in JS</title>
+</head>
+<body>
+    
+
+    <h1>Lucky Draw</h1>
+    <p>Enter your name and guess a number to win!</p>
+    <input type="text" id="name" placeholder="your name " required><br>
+    
+    <p>Guess number between 1 to 5!<p>
+    <input type="number" id="guess" min="1" max="5" required>
+    <br><br>
+
+    <button onclick="validate()">Try My luck!</button>
+    <p id="msg"></p>
+
+    <script>
+        function validate(){
+            var lucky_num = Math.floor(Math.random() * 5) + 1;
+            var name= document.getElementById("name").value;
+            var guess = DocumentTimeline.getElementById("guess").value;
+        }
+    </script>
+</html>
